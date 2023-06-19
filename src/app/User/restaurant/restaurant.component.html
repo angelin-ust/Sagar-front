@@ -1,0 +1,42 @@
+<div>
+  <input #s type="text" placeholder="Search Food"
+   />
+  <button >Search</button>
+</div>
+
+
+
+
+
+
+ <h1 style="font-style: italic; margin-bottom: 30px; text-shadow: 30px;
+text-align: center; text-decoration: underline;">Our Restaurant</h1>
+
+<ul style="text-decoration: none;">
+    <div *ngFor="let restaurant of rest">
+    <li >
+       <a     (click)="fetchSpecificRestaurantMenu(restaurant.restName)"  >
+         <img src="{{restaurant.restPic}}" alt="image" />
+        <div class="content" >
+          <div style="padding-bottom: 10px;" >
+           <span style="font-size: large; font-weight: bolder;font-style: italic;
+           text-decoration: none;">{{restaurant.restName}} </span>  
+           <span  style="font-size: medium; float:right; text-decoration: none;
+           ">{{restaurant.restContact}}  </span>
+          </div>
+
+          <div class="adress">
+          
+           <p style="text-decoration-style: none;">
+            {{restaurant.restAddress}}
+            </p>
+          </div>
+  
+         
+        </div>
+      </a>
+    </li>
+</div>
+  
+  </ul> 
+ 

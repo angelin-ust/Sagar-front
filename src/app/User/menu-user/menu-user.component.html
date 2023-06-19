@@ -1,0 +1,24 @@
+<app-navbaruser></app-navbaruser>
+<div >
+<ul>
+  <li *ngFor="let menuItem of menu" >
+    <div>
+      <img  src="{{menuItem.mpic}}" alt="">
+    </div>
+    <div>
+      {{menuItem.mname}}
+    </div>
+   
+    <div>
+      ₹ {{menuItem.mprice}}
+    </div>
+
+    <div>
+      <button class="remove-button" >
+      Add Cart
+      </button>
+    </div>
+  </li>
+</ul>
+
+</div>
