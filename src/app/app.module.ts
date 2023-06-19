@@ -26,6 +26,7 @@ import { RestaurantComponent } from './User/restaurant/restaurant.component';
 import { MenuUserComponent } from './User/menu-user/menu-user.component';
 import { NavbaruserComponent } from './User/navbaruser/navbaruser.component';
 import { SearchComponent } from './User/search/search.component';
+import { BannerComponent } from './User/banner/banner.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +51,8 @@ import { SearchComponent } from './User/search/search.component';
     RestaurantComponent,
     MenuUserComponent,
     NavbaruserComponent,
-    SearchComponent
+    SearchComponent,
+    BannerComponent
   ],
   imports: [
     BrowserModule,
